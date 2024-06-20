@@ -27,8 +27,8 @@ jobs:
         run: npm ci
       - name: Build
         run: |
-          npm i -g typescript
-          npm run build
+          npm install
+          tsc
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Cleanup Files
